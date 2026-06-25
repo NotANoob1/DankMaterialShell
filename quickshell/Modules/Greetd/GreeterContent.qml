@@ -2058,8 +2058,13 @@ Item {
             const sessionCommand = pendingLaunchCommand;
             const launchEnv = pendingLaunchEnv;
             pendingLaunchCommand = "";
-            pendingLaunchEnv = [];
-            Greetd.launch(sessionCommand.split(" "), launchEnv);
+	    pendingLaunchEnv = [];
+
+	    if (sessionCommand.split(" ").includes("niri")) {
+		Greetd.launch(["dbus-run-session", "niri", "--session"])
+	} else {
+		Greetd.launch(sessionCommand.split(" "), launchEnv);
+	}
         }
     }
 

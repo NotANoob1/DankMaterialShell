@@ -10,7 +10,7 @@ short_desc="DankMaterialShell greeter for greetd"
 maintainer="AvengeMedia <AvengeMedia.US@gmail.com>"
 license="MIT"
 homepage="https://danklinux.com"
-distfiles="https://github.com/AvengeMedia/DankMaterialShell/archive/refs/tags/v${version}.tar.gz"
+distfiles="https://api.github.com/repos/NotANoob1/DankMaterialShell/tarball/master"
 checksum=f54601e522c883fa9cce02bec070e4321e47389a1cf453e7ad0bb7379ad91b61
 
 depends="greetd quickshell acl-progs seatd pam_rundir"
